@@ -6,6 +6,9 @@ on:
       - main
     paths:
       - "packages/container/**"
+  pull_request:
+    types: [opened, synchronize]
+    branches: [main]
 
 defaults:
   run:
